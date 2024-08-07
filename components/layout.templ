@@ -19,9 +19,11 @@ templ HtmlWrapper() {
 				href="/public/styles.css"
 				rel="stylesheet"
 			/>
-			// <link rel="icon" href="/public/favicon.ico" type="image/x-icon"/>
-			<script src="https://unpkg.com/htmx.org@2.0.1" integrity="sha384-QWGpdj554B4ETpJJC9z+ZHJcA/i59TyjxEPXiiUgN2WmTyV5OEZWCD6gQhgkdpB/" crossorigin="anonymous"></script>
-			<script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.min.js" integrity="sha512-Atu8sttM7mNNMon28+GHxLdz4Xo2APm1WVHwiLW9gW4bmHpHc/E2IbXrj98SmefTmbqbUTOztKl5PDPiu0LD/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+			<link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png"/>
+			<link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png"/>
+			<link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png"/>
+			<link rel="manifest" href="/public/site.webmanifest"/>
+			<script src="/public/assets/htmx.min.js"></script>
 		</head>
 		<body>
 			{ children... }
@@ -34,7 +36,6 @@ templ HtmlWrapper() {
 						}
 					});
 				})
-
 			</script>
 		</body>
 	</html>
