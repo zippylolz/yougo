@@ -1,0 +1,25 @@
+
+package components
+
+templ header(isLoggedIn bool) {
+	<header class="navbar bg-gray-200">
+		<div class="container mx-auto">
+			<div class="flex justify-between w-full">
+				<div class="flex items-center">
+					<a href="/" class="navbar-brand text-4xl mr-2 flex gap-2 items-center">
+						<div class="relative">
+						<img src="/public/golang_1.svg" class="size-32"/>
+						<img class="animate-pulse absolute left-12 bottom-5 size-8" src="/public/yt.svg" />
+						</div>
+						YouGo
+					</a>
+				</div>
+				if isLoggedIn {
+					<a href="/logout" class="btn btn-link">Logout</a>
+				} else {
+					<a href="/login" class="btn btn-link">Login</a>
+				}
+			</div>
+		</div>
+	</header>
+}
