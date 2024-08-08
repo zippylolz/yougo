@@ -6,11 +6,13 @@ import (
 	"zippylolz/yougo/utils"
 
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/log"
 )
 
 func RegisterRoutes(app *fiber.App) {
 
 	app.Get("/", func(c *fiber.Ctx) error {
+		log.Info("Homepage visit")
 		return utils.Render(c, components.Home())
 	})
 
